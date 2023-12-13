@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>Gadha Aluminium Fabrications</title>
+
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:400,600,700&display=swap"
+    rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+</head>
+
+<body class="sub_page">
+  <div class="hero_area">
+    <!-- header section strats -->
+    <div class="top_nav">
+      <div class="container">
+        <div class="contact_link-container">
+          <a href="" class="contact_link2">
+            <img src="images/call.png" alt="" />
+            <span>
+              Call : +91 9567325780
+            </span>
+          </a>
+          <a href="" class="contact_link3">
+            <img src="images/mail.png" alt="" />
+            <span>
+              gadhaaluminium@gmai.com
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container">
+          <a class="navbar-brand" href="index.html">
+            <img src="images/logo.png" alt="" />
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse ml-auto" id="navbarSupportedContent">
+            <ul class="navbar-nav  ">
+              <li class="nav-item ">
+                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html"> About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="service.html"> Services </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="works.html"> Works </a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="contact.html">Contact us</a>
+              </li>
+              </form>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+  </div>
+
+  <section class="contact_section layout_padding">
+    <div class="container">
+      <div class="heading_container">
+        <h2>
+          Get In touch
+        </h2>
+      </div>
+      <div class="">
+        <div class="row">
+          <div class="col-md-6 ">
+            <form id="submit-form" action="">
+              <div class="contact_form-container">
+                <div>
+                  <div>
+                    <input type="text" placeholder="Full Name" name="name" />
+                  </div>
+                  <div>
+                    <input type="email" placeholder="Email " name="email" />
+                  </div>
+                  <div>
+                    <input type="tel" placeholder="Phone Number" name="mobile" />
+                  </div>
+                  <div class="">
+                    <input type="text" placeholder="Message" class="message_input" name="message" />
+                  </div>
+                  <div class=" ">
+                    <button type="submit" name="submit" value="Send Data">
+                      Send
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="col-md-6">
+            <div class="img-box">
+              <img src="images/map.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    $("#submit-form").submit((e) => {
+      e.preventDefault()
+      $.ajax({
+        url: "https://script.google.com/macros/s/AKfycbwbmg5HLQ6onhVV-tnAH6Qm7RIXiEIJE3cK7BqjIZFI8pqCN-6Uh-ee_vBGvYkCHPZS/exec",
+        data: $("#submit-form").serialize(),
+        method: "post",
+        success: function (response) {
+          alert("Form submitted successfully")
+          window.location.reload()
+          //window.location.href="https://google.com"
+        },
+        error: function (err) {
+          alert("Something Error")
+
+        }
+      })
+    })
+  </script>
+
+  <!-- end contact section -->
+
+
+  <!-- info section -->
+  <section class="info_section ">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="info_logo">
+            <a class="navbar-brand" href="index.html">
+              <span>
+                GAF
+              </span>
+            </a>
+            <p>
+              Benefit from our extensive industrial know-how as we specialize in manufacturing a comprehensive range of
+              Aluminium Fabrication products. Our expertise spans Residential, Commercial, and Industrial sectors,
+              ensuring a diverse and exceptional product line.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="info_links">
+            <h5>
+              Useful Link
+            </h5>
+            <ul>
+              <li>
+                <a href="https://www.alcircle.com/news" target="_blank">
+                  Latest News and Updates
+                </a>
+              </li>
+              <li>
+                <a href="https://in.pinterest.com/carry2604/aluminium-windows-and-doors/" target="_blank">
+                  Design Ideas
+                </a>
+              </li>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="info_info">
+            <h5>
+              Contact Us
+            </h5>
+            <p>
+              Call Us : +91 9567325780<br>
+              Email Us : gadhaaluminium@gmail.com
+            </p>
+          </div>
+        </div>
+
+
+        <div class="col-md-3">
+          <div class="info_form ">
+            <h5>
+              Newsletter
+            </h5>
+            <form action="">
+              <input type="email" placeholder="Enter your email">
+              <button>
+                Subscribe
+              </button>
+            </form>
+            <div class="social_box">
+              <a href="https://www.facebook.com/profile.php?id=61554208966450&mibextid=2JQ9oc" target="_blank">
+                <img src="images/fb.png" alt="">
+              </a>
+              <a href="">
+                <img src="images/instagram.png" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end info_section -->
+
+  <!-- footer section -->
+  <footer class="container-fluid footer_section">
+    <p>
+      &copy; 2023 All Rights Reserved. Design by Red Alliance
+    </p>
+  </footer>
+  <!-- footer section -->
+
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+</body>
+
+</html>
